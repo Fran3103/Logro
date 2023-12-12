@@ -15,6 +15,10 @@ export default {
 
 
         },
+        backgroundImage: {
+            'bg-header': "url('src/assets/CONJUTNO-TRADICIONAL-e1701785391936.jpg')",
+            'footer-texture': "url('/img/footer-texture.png')",
+          },
       extend: {},
     },
     plugins: [],

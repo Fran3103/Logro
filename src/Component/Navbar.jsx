@@ -13,7 +13,7 @@ const Navbar = () => {
 
     const activar = () => setActive (!active)
   return (
-    <div className="max-w-[1240px] m-auto  w-full relative z-20" >
+    <div className=" m-auto  w-full relative z-20" >
         <div className="flex justify-between items-center p-5 px-12  bg-blue z-100 relative lg:hidden">
             <img src={logo} alt="logo" className="w-40 "  />
       
@@ -31,38 +31,42 @@ const Navbar = () => {
                 <Link><button className="bg-green px-5 py-3 text-lg w-40 rounded-3xl hover:bg-[#32c895] duration-200">Ingresar</button></Link>
             </ul>
         </div>
-        <div className="hidden lg:flex w-full flex-col mt-2 ">
-            <div className="flex justify-between items-center mb-2 lg:px-3">
-               <img src={logoAzul} alt="logo" className="w-40" />
-               <div className="flex justify-center items-center gap-5">
-                 
-                    <FaPhoneAlt className="w-16 h-5" />
-                    <div>
-                        <p>+595 986 900129</p>
-                        <p>info@logro.com.py</p>
-                    </div>
-               </div>
-               <div className="flex justify-center items-center gap-5">
-                    <CiLocationOn className="w-16 h-5"  />
-                    <div>
-                        <p>OJJC SRL - Alfredo Seiferheld 4896,</p>
-                        <p>Paseo Adensam Of. N°1</p>
-                    </div>
-               </div>
+        <div className="hidden lg:flex w-full flex-col mt-2  items-center  ">
+            <div className="w-screen max-w-[1240px]">
+                <div className="flex justify-between mb-2 lg:px-3 ">
+                <img src={logoAzul} alt="logo" className="w-40" />
+                <div className="flex justify-center items-center gap-5">
+                    
+                        <FaPhoneAlt className="w-16 h-5" />
+                        <div>
+                            <p>+595 986 900129</p>
+                            <p>info@logro.com.py</p>
+                        </div>
+                </div>
+                <div className="flex justify-center items-center gap-5">
+                        <CiLocationOn className="w-16 h-5"  />
+                        <div>
+                            <p>OJJC SRL - Alfredo Seiferheld 4896,</p>
+                            <p>Paseo Adensam Of. N°1</p>
+                        </div>
+                </div>
+            </div>
 
             </div>
-            <nav className="flex justify-between items-center  bg-blue py-6 px-4 w-full ">
-                <ul className= 'flex gap-9 text-xl pl-3  duration-1000 transition-all ease-in-out  text-white '>
-                        
-                        <Link><li className="hover:text-gray">Inicio</li></Link>
-                        <Link><li className="hover:text-gray">Propiedades</li></Link>
-                        <Link><li className="hover:text-gray">Nosotros</li></Link>
-                        <Link><li className="hover:text-gray">Contacto</li></Link>
+            <div className="bg-blue w-screen m-auto">
+                <nav className="flex justify-between items-center max-w-[1240px]  py-6 px-4 m-auto ">
+                    <ul className= 'flex gap-9 text-xl pl-3  duration-1000 transition-all ease-in-out  text-white '>
+                            
+                            <Link><li className="hover:text-gray">Inicio</li></Link>
+                            <Link><li className="hover:text-gray">Propiedades</li></Link>
+                            <Link><li className="hover:text-gray">Nosotros</li></Link>
+                            <Link><li className="hover:text-gray">Contacto</li></Link>
 
-                        
-                    </ul>
-                    <Link><button className="bg-green px-5 py-3 text-lg w-40 rounded-3xl hover:bg-[#32c895] duration-200">Ingresar</button></Link>
-            </nav>
+                            
+                        </ul>
+                        <Link><button className="bg-green px-5 py-3 text-lg w-40 rounded-3xl hover:bg-[#32c895] duration-200">Ingresar</button></Link>
+                </nav>
+            </div>
         </div>
     </div>
   )
