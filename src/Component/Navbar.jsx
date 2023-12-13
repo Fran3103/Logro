@@ -53,7 +53,7 @@ const Navbar = () => {
             </div>
 
             </div>
-            <div className="bg-blue w-screen m-auto">
+            <div className="bg-blue w-full m-auto">
                 <nav className="flex justify-between items-center max-w-[1240px]  py-6 px-4 m-auto ">
                     <ul className= 'flex gap-9 text-xl pl-3  duration-1000 transition-all ease-in-out  text-white '>
                             

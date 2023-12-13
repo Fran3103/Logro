@@ -2,7 +2,7 @@
 
 const Header = () => {
   return (
-    <div className="w-screen bg-bg-header  bg-cover">
+    <div className="w-full bg-bg-header  bg-cover ">
         <div className="m-auto max-w-[1240px] flex  flex-col justify-center items-center py-12 px-4 lg:flex-row lg:py-40">
             <div className="lg:mr-12">
                 <h1 className="text-5xl text-white my-4">Construimos sueños, creamos hogares</h1>

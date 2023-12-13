@@ -5,7 +5,7 @@ const Buscador = () => {
   return (
     <div>
         <div>
-            <form className="flex flex-col justify-between m-auto  rounded-xl  shadow-2xl bg-white my-7 max-w-[550px] md:flex-row md:max-w-[1240px]">
+            <form className="flex flex-col justify-between m-auto  rounded-xl  shadow-2xl bg-white my-7 w-3/4 sm:max-w-[550px] md:flex-row md:max-w-[1240px]">
 
                <div className="flex flex-col  md:gap-[1px]  gap-3 md:flex-row md:justify-between w-full md:bg-gray p-5 md:p-0">
                     <div className="flex flex-col md:gap-2 md:bg-white md:w-full md:h-full md:p-3">
