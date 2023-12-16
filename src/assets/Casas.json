@@ -20,15 +20,15 @@
         "totalFloors": 1,
         "price": "Gs.2,200,000/mes",
         "yearBuilt": 2024,
-        "plano": "src/assets/casa-1/plano-65m.jpg",
+        "plano": "src/assets/casa-1/plano.jpg",
         "imagenes": {
-          "baño": "src/assets/casa-1/Bano-e1702313007777.jpg",
-          "cocina": "src/assets/casa-1/Cocina-Comedor-scaled-e1702312966269.jpg",
-          "comedor": "src/assets/casa-1/Comedor-scaled-e1702312949776.jpg",
-          "dormitorio": "src/assets/casa-1/Dormitorio-scaled-e1702312979542.jpg",
+          "baño": "src/assets/casa-1/bano.jpg",
+          "cocina": "src/assets/casa-1/cocina.jpg",
+          "comedor": "src/assets/casa-1/comedor.jpg",
+          "dormitorio": "src/assets/casa-1/dormitorio.jpg",
           "estar": "src/assets/casa-1/Estar-scaled-e1702312938907.jpg",
-          "acceso": "src/assets/casa-1/Estar-Acceso-scaled-e1702312995843.jpg",
-          "fachada": "https://github.com/Fran3103/Logro/blob/main/src/assets/casa-1/1-Fachada-60m2-Reu-6.12.23.jpeg.jpg?raw=true"
+          "acceso": "src/assets/casa-1/estar.jpg",
+          "fachada": "src/assets/casa-1/fachada.jpg"
         }
       },
       {
@@ -50,10 +50,10 @@
         "totalFloors": 1,
         "price": "Gs.2,200,000/mes",
         "yearBuilt": 2023,
-        "plano": "src/assets/casa-2/65_m2_planta-1.jpg",
+        "plano": "src/assets/casa-2/plano.jpg",
         "imagenes": {
-          "acceso": "src/assets/casa-2/Copia-de-BARRIO-CERRADO-A-11-scaled-e1702316835214.jpg",
-          "fachada": "https://github.com/Fran3103/Logro/blob/main/src/assets/casa-2/Copia-de-BARRIO-CERRADO-A-11-scaled-e1702316835214.jpg?raw=true"
+          "acceso": "src/assets/casa-2/fachada.jpg",
+          "fachada": "src/assets/casa-2/fachada.jpg"
         }
       },
       {
@@ -75,9 +75,9 @@
         "totalFloors": 1,
         "price": "Gs.2,200,000/mes",
         "yearBuilt": 2023,
-        "plano": "src/assets/casa-3/65_m2_planta-e1701784407231.jpg",
+        "plano": "src/assets/casa-3/plano.jpg",
         "imagenes": {
-          "fachada": "/src/assets/casa-3/Copia-de-BARRIO-CERRADO-A-14-scaled-e1702317070144.jpg"
+          "fachada": "/src/assets/casa-3/fachada.jpg"
         }
       },
       {
@@ -99,14 +99,14 @@
         "totalFloors": 1,
         "price": "Gs.2,200,000/mes",
         "yearBuilt": 2024,
-        "plano": "src/assets/casa-4/plano-45m.jpg",
+        "plano": "src/assets/casa-4/plano.jpg",
         "imagenes": {
-          "baño": "src/assets/casa-4/Bano-e1702313007777.jpg",
-          "cocina": "src/assets/casa-4/Cocina-Comedor-scaled-e1702312966269.jpg",
-          "comedor": "src/assets/casa-4/Comedor-scaled-e1702312949776.jpg",
+          "baño": "src/assets/casa-4/bano.jpg",
+          "cocina": "src/assets/casa-4/cocina.jpg",
+          "comedor": "src/assets/casa-4/comedor.jpg",
           "dormitorio": "src/assets/casa-4/Dormitorio-scaled-e1702312979542.jpg",
-          "acceso": "src/assets/casa-4/Estar-Acceso-scaled-e1702312995843.jpg",
-          "fachada": "https://github.com/Fran3103/Logro/blob/main/src/assets/casa-4/T1-2_Tradicional-1-scaled-e1702312765509.jpg?raw=true"
+          "acceso": "src/assets/casa-4/estar.jpg",
+          "fachada": "src/assets/casa-4/fachada.jpg"
         }
       },
       {
@@ -128,15 +128,15 @@
         "totalFloors": 1,
         "price": "Gs.2,200,000/mes",
         "yearBuilt": 2024,
-        "plano": "src/assets/casa-1/plano-65m.jpg",
+        "plano": "src/assets/casa-1/plano.jpg",
         "imagenes": {
-          "baño": "src/assets/casa-1/Bano-e1702313007777.jpg",
-          "cocina": "src/assets/casa-1/Cocina-Comedor-scaled-e1702312966269.jpg",
-          "comedor": "src/assets/casa-1/Comedor-scaled-e1702312949776.jpg",
-          "dormitorio": "src/assets/casa-1/Dormitorio-scaled-e1702312979542.jpg",
-          "estar": "src/assets/casa-1/Estar-scaled-e1702312938907.jpg",
-          "acceso": "src/assets/casa-1/Estar-Acceso-scaled-e1702312995843.jpg",
-          "fachada": "/src/assets/casa-1/1-Fachada-60m2-Reu-6.12.23.jpeg.jpg"
+            "baño": "src/assets/casa-1/bano.jpg",
+            "cocina": "src/assets/casa-1/cocina.jpg",
+            "comedor": "src/assets/casa-1/comedor.jpg",
+            "dormitorio": "src/assets/casa-1/dormitorio.jpg",
+            "estar": "src/assets/casa-1/Estar-scaled-e1702312938907.jpg",
+            "acceso": "src/assets/casa-1/estar.jpg",
+            "fachada": "src/assets/casa-1/fachada.jpg"
         }
       },
       {
@@ -158,15 +158,15 @@
         "totalFloors": 1,
         "price": "Gs.2,200,000/mes",
         "yearBuilt": 2024,
-        "plano": "src/assets/casa-1/plano-65m.jpg",
+        "plano": "src/assets/casa-1/plano.jpg",
         "imagenes": {
-          "baño": "src/assets/casa-1/Bano-e1702313007777.jpg",
-          "cocina": "src/assets/casa-1/Cocina-Comedor-scaled-e1702312966269.jpg",
-          "comedor": "src/assets/casa-1/Comedor-scaled-e1702312949776.jpg",
-          "dormitorio": "src/assets/casa-1/Dormitorio-scaled-e1702312979542.jpg",
-          "estar": "src/assets/casa-1/Estar-scaled-e1702312938907.jpg",
-          "acceso": "src/assets/casa-1/Estar-Acceso-scaled-e1702312995843.jpg",
-          "fachada": "/src/assets/casa-1/1-Fachada-60m2-Reu-6.12.23.jpeg.jpg"
+            "baño": "src/assets/casa-1/bano.jpg",
+            "cocina": "src/assets/casa-1/cocina.jpg",
+            "comedor": "src/assets/casa-1/comedor.jpg",
+            "dormitorio": "src/assets/casa-1/dormitorio.jpg",
+            "estar": "src/assets/casa-1/Estar-scaled-e1702312938907.jpg",
+            "acceso": "src/assets/casa-1/estar.jpg",
+            "fachada": "src/assets/casa-1/fachada.jpg"
         }
       },
        {
@@ -190,13 +190,12 @@
         "yearBuilt": 2024,
         "plano":"src/assets/casa-7/plano-82m.jpg",
         "imagenes":{
-            "baño":"src/assets/casa-4/Bano-e1702313007777.jpg",
-            "cocina":"src/assets/casa-4/Cocina-Comedor-scaled-e1702312966269.jpg",
-            "comedor":"src/assets/casa-4/Comedor-scaled-e1702312949776.jpg",
-            "dormitorio":"src/assets/casa-4/Dormitorio-scaled-e1702312979542.jpg",
-            "estar":"src/assets/casa-4/Estar-scaled-e1702312938907.jpg",
-            "acceso":"src/assets/casa-4/Estar-Acceso-scaled-e1702312995843.jpg",
-            "fachada":"/src/assets/casa-7/T3_tradicional-scaled.jpg"
+            "baño": "src/assets/casa-4/bano.jpg",
+            "cocina": "src/assets/casa-4/cocina.jpg",
+            "comedor": "src/assets/casa-4/comedor.jpg",
+            "dormitorio": "src/assets/casa-4/Dormitorio-scaled-e1702312979542.jpg",
+            "acceso": "src/assets/casa-4/estar.jpg",
+            "fachada": "src/assets/casa-7/fachada.jpg"
             }
     },
     {
@@ -220,13 +219,13 @@
         "yearBuilt": 2024,
         "plano":"src/assets/casa-7/plano-82m.jpg",
         "imagenes":{
-            "baño":"src/assets/casa-1/Bano-e1702313007777.jpg",
-            "cocina":"src/assets/casa-1/Cocina-Comedor-scaled-e1702312966269.jpg",
-            "comedor":"src/assets/casa-1/Comedor-scaled-e1702312949776.jpg",
-            "dormitorio":"src/assets/casa-1/Dormitorio-scaled-e1702312979542.jpg",
-            "estar":"src/assets/casa-1/Estar-scaled-e1702312938907.jpg",
-            "acceso":"src/assets/casa-1/Estar-Acceso-scaled-e1702312995843.jpg",
-            "fachada":"src/assets/casa-1/1-Fachada-60m2-Reu-6.12.23.jpeg.jpg"
+            "baño": "src/assets/casa-1/bano.jpg",
+            "cocina": "src/assets/casa-1/cocina.jpg",
+            "comedor": "src/assets/casa-1/comedor.jpg",
+            "dormitorio": "src/assets/casa-1/dormitorio.jpg",
+            "estar": "src/assets/casa-1/Estar-scaled-e1702312938907.jpg",
+            "acceso": "src/assets/casa-1/estar.jpg",
+            "fachada": "src/assets/casa-1/fachada.jpg"
             }
     }
    ]
