@@ -99,14 +99,14 @@
         "totalFloors": 1,
         "price": "Gs.2,200,000/mes",
         "yearBuilt": 2024,
-        "plano": "https://github.com/Fran3103/Logro/blob/main/src/assets/casa-4/plano.jpg?raw=true?token=GHSAT0AAAAAACK22N2ZI3RNXGUTJFTWQDZ4ZL53XQQ",
+        "plano": "https://raw.githubusercontent.com/Fran3103/Logro/main/src/assets/casa-4/plano.jpg?token=GHSAT0AAAAAACK22N2ZJCC7DPZJUN3WCPSKZL54XCQ",
         "imagenes": {
-          "baño": "https://github.com/Fran3103/Logro/blob/main/src/assets/casa-4/bano.jpg?raw=true?token=GHSAT0AAAAAACK22N2ZI3RNXGUTJFTWQDZ4ZL53XQQ",
-          "cocina": "https://github.com/Fran3103/Logro/blob/main/src/assets/casa-4/cocina.jpg?raw=true?token=GHSAT0AAAAAACK22N2ZI3RNXGUTJFTWQDZ4ZL53XQQ",
-          "comedor": "https://github.com/Fran3103/Logro/blob/main/src/assets/casa-4/comedor.jpg?raw=true?token=GHSAT0AAAAAACK22N2ZI3RNXGUTJFTWQDZ4ZL53XQQ",
-          "dormitorio": "https://github.com/Fran3103/Logro/blob/main/src/assets/casa-4/dormitorio-1.jpg?raw=true?token=GHSAT0AAAAAACK22N2ZI3RNXGUTJFTWQDZ4ZL53XQQ",
-          "acceso": "https://github.com/Fran3103/Logro/blob/main/src/assets/casa-4/estar.jpg?raw=true?token=GHSAT0AAAAAACK22N2ZI3RNXGUTJFTWQDZ4ZL53XQQ",
-          "fachada": "https://github.com/Fran3103/Logro/blob/main/src/assets/casa-4/fachada.jpg?raw=true?token=GHSAT0AAAAAACK22N2ZI3RNXGUTJFTWQDZ4ZL53XQQ"
+          "baño": "https://raw.githubusercontent.com/Fran3103/Logro/main/src/assets/casa-4/bano.jpg?token=GHSAT0AAAAAACK22N2YYKJ3NPXIXFQV3IMKZL54ZTA",
+          "cocina": "https://raw.githubusercontent.com/Fran3103/Logro/main/src/assets/casa-4/cocina.jpg?token=GHSAT0AAAAAACK22N2ZBUECAVGBTYK7G7BUZL54ZMQ",
+          "comedor": "https://raw.githubusercontent.com/Fran3103/Logro/main/src/assets/casa-4/comedor.jpg?token=GHSAT0AAAAAACK22N2ZL4FJQP5QG6BSDSOOZL54ZFQ",
+          "dormitorio": "https://raw.githubusercontent.com/Fran3103/Logro/main/src/assets/casa-4/dormitorio-1.jpg?token=GHSAT0AAAAAACK22N2ZX3UAWKWQZQIYF72WZL54Y5Q",
+          "acceso": "https://raw.githubusercontent.com/Fran3103/Logro/main/src/assets/casa-4/estar.jpg?token=GHSAT0AAAAAACK22N2YEVNIEXKFJRK3RF4SZL54YOA",
+          "fachada": "https://raw.githubusercontent.com/Fran3103/Logro/main/src/assets/casa-4/fachada.jpg?token=GHSAT0AAAAAACK22N2Y4O763JVDZOS73ZUKZL54YEA"
         }
       },
       {
@@ -216,7 +216,7 @@
         "totalFloors": 1,
         "price": "Gs.2,200,000/mes",
         "yearBuilt": 2024,
-        "plano":"https://github.com/Fran3103/Logro/blob/main/src/assets/casa-7/plano-82m.jpg?raw=true?token=GHSAT0AAAAAACK22N2ZI3RNXGUTJFTWQDZ4ZL53XQQ",
+        "plano":"https://raw.githubusercontent.com/Fran3103/Logro/main/src/assets/casa-7/plano-82m.jpg?token=GHSAT0AAAAAACK22N2ZBALLYUNZLA3NOTEOZL54UOA",
         "imagenes":{
             "baño": "https://github.com/Fran3103/Logro/blob/main/src/assets/casa-1/bano.jpg?raw=true?token=GHSAT0AAAAAACK22N2ZI3RNXGUTJFTWQDZ4ZL53XQQ",
             "cocina": "https://github.com/Fran3103/Logro/blob/main/src/assets/casa-1/cocina.jpg?raw=true?token=GHSAT0AAAAAACK22N2ZI3RNXGUTJFTWQDZ4ZL53XQQ",
@@ -224,7 +224,7 @@
             "dormitorio": "https://github.com/Fran3103/Logro/blob/main/src/assets/casa-1/dormitorio.jpg?raw=true?token=GHSAT0AAAAAACK22N2ZI3RNXGUTJFTWQDZ4ZL53XQQ",
             "estar": "https://github.com/Fran3103/Logro/blob/main/src/assets/casa-1/estar.jpg?raw=true?token=GHSAT0AAAAAACK22N2ZI3RNXGUTJFTWQDZ4ZL53XQQ",
             "acceso": "https://github.com/Fran3103/Logro/blob/main/src/assets/casa-1/estar.jpg?raw=true?token=GHSAT0AAAAAACK22N2ZI3RNXGUTJFTWQDZ4ZL53XQQ",
-            "fachada": "https://github.com/Fran3103/Logro/blob/main/src/assets/casa-1/fachada.jpg?raw=true?token=GHSAT0AAAAAACK22N2ZI3RNXGUTJFTWQDZ4ZL53XQQ" }
+            "fachada": "https://raw.githubusercontent.com/Fran3103/Logro/main/src/assets/casa-7/fachada.jpg?token=GHSAT0AAAAAACK22N2ZC5CBDFUAS3NRWGIIZL54WLA" }
     }
    ]
 }
