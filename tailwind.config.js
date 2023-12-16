@@ -16,7 +16,7 @@ export default {
 
         },
         backgroundImage: {
-            'bg-header': "url('src/assets/fondo-principal.jpg')",
+            'bg-header': "url('https://github.com/Fran3103/Logro/blob/main/src/assets/fondo-principal.jpg?raw=true')",
             'footer-texture': "url('/img/footer-texture.png')",
           },
       extend: {},
