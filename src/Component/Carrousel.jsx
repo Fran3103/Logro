@@ -1,6 +1,6 @@
 
 import { useRef } from 'react'
-import data from '../../Casas.json'
+import data from '../assets/Casas.json'
 import Casa from './Casa'
 
 const Carrousel = () => {
