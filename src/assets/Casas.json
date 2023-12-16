@@ -77,7 +77,7 @@
         "yearBuilt": 2023,
         "plano": "src/assets/casa-3/65_m2_planta-e1701784407231.jpg",
         "imagenes": {
-          "fachada": "../src/assets/casa-3/Copia-de-BARRIO-CERRADO-A-14-scaled-e1702317070144.jpg"
+          "fachada": "/src/assets/casa-3/Copia-de-BARRIO-CERRADO-A-14-scaled-e1702317070144.jpg"
         }
       },
       {
@@ -106,7 +106,7 @@
           "comedor": "src/assets/casa-4/Comedor-scaled-e1702312949776.jpg",
           "dormitorio": "src/assets/casa-4/Dormitorio-scaled-e1702312979542.jpg",
           "acceso": "src/assets/casa-4/Estar-Acceso-scaled-e1702312995843.jpg",
-          "fachada": "src/assets/casa-4/T1-2_Tradicional-1-scaled-e1702312765509.jpg"
+          "fachada": "/src/assets/casa-4/T1-2_Tradicional-1-scaled-e1702312765509.jpg"
         }
       },
       {
@@ -136,7 +136,7 @@
           "dormitorio": "src/assets/casa-1/Dormitorio-scaled-e1702312979542.jpg",
           "estar": "src/assets/casa-1/Estar-scaled-e1702312938907.jpg",
           "acceso": "src/assets/casa-1/Estar-Acceso-scaled-e1702312995843.jpg",
-          "fachada": "src/assets/casa-1/1-Fachada-60m2-Reu-6.12.23.jpeg.jpg"
+          "fachada": "/src/assets/casa-1/1-Fachada-60m2-Reu-6.12.23.jpeg.jpg"
         }
       },
       {
@@ -166,7 +166,7 @@
           "dormitorio": "src/assets/casa-1/Dormitorio-scaled-e1702312979542.jpg",
           "estar": "src/assets/casa-1/Estar-scaled-e1702312938907.jpg",
           "acceso": "src/assets/casa-1/Estar-Acceso-scaled-e1702312995843.jpg",
-          "fachada": "src/assets/casa-1/1-Fachada-60m2-Reu-6.12.23.jpeg.jpg"
+          "fachada": "/src/assets/casa-1/1-Fachada-60m2-Reu-6.12.23.jpeg.jpg"
         }
       },
        {
@@ -196,7 +196,7 @@
             "dormitorio":"src/assets/casa-4/Dormitorio-scaled-e1702312979542.jpg",
             "estar":"src/assets/casa-4/Estar-scaled-e1702312938907.jpg",
             "acceso":"src/assets/casa-4/Estar-Acceso-scaled-e1702312995843.jpg",
-            "fachada":"src/assets/casa-7/T3_tradicional-scaled.jpg"
+            "fachada":"/src/assets/casa-7/T3_tradicional-scaled.jpg"
             }
     },
     {
