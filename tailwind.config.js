@@ -16,7 +16,7 @@ export default {
 
         },
         backgroundImage: {
-            'bg-header': "url('src/assets/CONJUTNO-TRADICIONAL-e1701785391936.jpg')",
+            'bg-header': "url('https://github.com/Fran3103/Logro/blob/main/src/assets/CONJUTNO-TRADICIONAL-e1701785391936.jpg?raw=true')",
             'footer-texture': "url('/img/footer-texture.png')",
           },
       extend: {},
