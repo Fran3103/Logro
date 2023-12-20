@@ -1,0 +1,20 @@
+{
+    "comentarios":[
+       { "id": 1,
+        "descripcion": "Increíble experiencia con Logro. Adquirí casa y terreno en cómodas cuotas. Profesionalismo y cumplimiento total. ¡Gracias por hacer realidad nuestro sueño del hogar propio!",
+        "imagen":"https://sebastianp49.sg-host.com/wp-content/uploads/2021/12/cliente-logro-150x150.jpg",
+        "familia":"Benitez"
+        },
+        { "id": 2,
+        "descripcion": "Logro hizo posible nuestro sueño de tener la casa propia. Cuotas flexibles, atención personalizada. ¡Superaron mis expectativas! Recomiendo 100%",
+        "imagen":"https://sebastianp49.sg-host.com/wp-content/uploads/2021/12/cliente-logro1-150x150.jpg",
+        "familia":"Gonzalez"
+        },
+        { "id": 3,
+        "descripcion": "Emocionados con nuestra nueva casa y terreno en cuotas gracias a Logro. Facilitaron todo el proceso, ¡Nuestro sueño ahora es realidad! ",
+        "imagen":"https://sebastianp49.sg-host.com/wp-content/uploads/2021/12/cliente-logro2-1-150x150.jpg",
+        "familia":"Montiel"
+        }
+
+    ]
+}
