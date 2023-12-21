@@ -33,12 +33,14 @@ const Destacada = () => {
     }
 
   return (
-    <div className="mt-24 mb-12">
-        <div className="relative">
-                <img src={img} alt='imagen' className="p-2 rounded-xl"/>
-                <div>
-                    <button onClick={anterior} className="absolute top-80 left-3 cursor-pointer  "><GrPrevious /></button>
-                    <button onClick={siguiente} className="absolute top-80 right-3 cursor-pointer   "><GrNext /></button>
+    <div className="mt-24 mb-12 m-auto flex flex-col">
+        <div className="relative ">
+                <div  className="relative" >
+                    <img src={img} alt='imagen' className="p-2 rounded-xl relative "/>
+                    <div className="absolute w-full top-[50%]">
+                        <button onClick={anterior} className="absolute text-3xl left-3 cursor-pointer  "><GrPrevious /></button>
+                        <button onClick={siguiente} className="absolute right-3 cursor-pointer  text-3xl "><GrNext /></button>
+                    </div>
                 </div>
         </div>
         <div className="flex flex-col gap-3 p-4">

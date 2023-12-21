@@ -19,6 +19,12 @@ export default {
             'bg-header': "url('https://raw.githubusercontent.com/Fran3103/Logro/main/src/assets/fondo-principal.jpg?token=GHSAT0AAAAAACK22N2YXEBIDWHGIILYVPUWZL54TVA')",
             'footer-texture': "url('/img/footer-texture.png')",
           },
+
+          fontWeight:{
+            'semibold':'400',
+            'bold':'700',
+            'light':'300'
+          },
       extend: {},
     },
     plugins: [],
