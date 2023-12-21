@@ -3,6 +3,7 @@ import Calculadora from "./Component/Calculadora"
 import Carrousel from "./Component/Carrousel"
 import Comentarios from "./Component/Comentarios"
 import Destacada from "./Component/Destacada"
+import Footer from "./Component/Footer"
 import Header from "./Component/Header"
 import Navbar from "./Component/Navbar"
 
@@ -19,6 +20,7 @@ function App() {
         <Calculadora/>
         <Destacada/>
         <Comentarios/>
+        <Footer/>
       
     </>
   )
