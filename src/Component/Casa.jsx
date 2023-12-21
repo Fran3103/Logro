@@ -10,7 +10,7 @@ const Casa = ({metros,habitaciones,baños, tipo, img, precio}) => {
 
 
   return (
-    <div className="w-[355px] h-[450px] m-auto"  >
+    <div className="w-[395px] h-[450px] m-auto"  >
         <div className="relative w-full">
         
             <img src={img} alt={tipo}  className="rounded-t-xl h-[250px] w-full"/>
