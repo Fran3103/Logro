@@ -2,6 +2,14 @@ import img1 from '../assets/casa-2/fachada.jpg'
 import img2 from '../assets/casa-3/fachada.jpg'
 import img3 from '../assets/casa-4/fachada.jpg'
 const Footer = () => {
+
+    const submit = (e) => {
+        e.preventDefault();
+        
+        
+        e.target.reset()
+      };
+        
   return (
     <div className='pt-20 sm:max-w-[1240px] max-w-[550px] sm:w-full flex flex-col justify-center items-center p-4 m-auto sm:flex-row sm:grid sm:grid-cols-3 sm:grid-rows-2 sm:gap-3 lg:mt-4'>
         <div className='flex flex-col gap-5 my-4 sm:mr-6 sm:h-56 '>
@@ -17,10 +25,10 @@ const Footer = () => {
             </div>
         </div>
         <div className='flex flex-col w-full items-start  gap-3 my-4 sm:h-56 '>
-            <form action="" className='flex flex-col w-full  gap-5 sm:gap-5 md:gap-7' >
+            <form action="" onSubmit={submit} className='flex flex-col w-full  gap-5 sm:gap-5 md:gap-7' >
                 <label htmlFor="email" className='text-2xl font-bold lg:text-2xl '>Novedades</label>
                 <input type="email" name="novedades" id="email" placeholder="ingresé su e-mail" className='py-2 px-5 text-lg text-black   border-[1px] border-gray rounded-full shadow-2xl lg:text-xl lg:px-5 lg:py-4'/>
-                <button type="submit" className="bg-green px-5 py-4 text-lg w-40 rounded-full hover:bg-[#32c895] duration-200 text-white shadow-xl lg:text-lg  lg:px-6">Subscríbite</button>
+                <button type="submit"  className="bg-green px-5 py-4 text-lg w-40 rounded-full hover:bg-[#32c895] duration-200 text-white shadow-xl lg:text-lg  lg:px-6">Subscríbite</button>
             </form>
         </div>
         <div className='w-full flex flex-col sm:row-start-2 sm:col-start-1 sm:col-end-4 '>

@@ -50,7 +50,7 @@ const Destacada = () => {
 
             <h4 className="flex items-center gap-2 text-lg text-gray"> <CiLocationOn className="text-2xl font-bold" /> Urbanización Logro San Cayetano, Itauguá, Paraguay</h4>
 
-            <p className="text-lg text-gray max-w-4xl">Aquí hacemos realidad el sueño de tener tu propio hogar, diseñado especialmente para aquellos que buscan construir la vida que siempre quisieron. En Logro, creemos que mereces y puedes tener <Link to="/propiedades" className="text-blue">Leer más...</Link></p>
+            <p className="text-lg text-gray max-w-4xl">Aquí hacemos realidad el sueño de tener tu propio hogar, diseñado especialmente para aquellos que buscan construir la vida que siempre quisieron. En Logro, creemos que mereces y puedes tener <Link to={`/detallePropiedad?casaID=2`} className="text-blue">Leer más...</Link></p>
             
             <div className="flex items-start  gap-3">
                 <div className="flex  flex-col gap-1 ">
@@ -70,7 +70,9 @@ const Destacada = () => {
             </div>
 
             <h2 className="text-4xl text-blue mt-3 font-bold">Gs. 2,800,000 <span className="text-xl text-black">/mes</span></h2>
-            <button className="bg-[#029958] px-5 py-3 text-lg w-40 rounded-3xl hover:bg-[#32c895] duration-200 mt-4 text-white"> Ver Detalles</button>
+           <Link to={`/detallePropiedad?casaID=2`} >
+                    <button className="bg-[#029958] px-5 py-3 text-lg w-40 rounded-3xl hover:bg-[#32c895] duration-200 mt-4 text-white"> Ver Detalles</button>
+           </Link>
         </div>
     </div>
   )

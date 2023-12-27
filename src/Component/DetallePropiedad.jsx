@@ -20,6 +20,15 @@ const DetallePropiedad = () => {
     const [imagen, setImagen] = useState (0)
     const [plano, setPlano] = useState(false)
 
+   
+
+  const submit = (e) => {
+    e.preventDefault();
+    
+    e.target.reset()
+  };
+    
+
     let casa = casas.casas
     let imagenes = [
         casa[idCasa].imagenes.acceso,    
@@ -176,7 +185,8 @@ const DetallePropiedad = () => {
             <h2 className='text-2xl text-blueDark font-bold '>Enviar mensaje al Agente</h2>
             <hr className='w-[50px] h-[3px] border-none bg-blue' />
             <div className='w-full'>
-                <form  className="flex flex-col justify-center bg-white py-4 rounded-xl text-left gap-4 max-w-[550px] md:text-lg">
+                
+                <form onSubmit={submit} className="flex flex-col justify-center bg-white py-4 rounded-xl text-left gap-4 max-w-[550px] md:text-lg">
 
                     <label htmlFor="nombre" className="-mb-3">Nombre y Apellido</label>
                     <input type="text" name="nombre" id="nombre" className="border rounded-2xl w-full shadow-md border-gray h-9 pl-4 md:h-10"/>
@@ -190,7 +200,7 @@ const DetallePropiedad = () => {
                     <label htmlFor="comentario" className="-mb-3">Tu Mensaje (opcional)</label>
                     <textarea name="mensaje" id="comentario" cols="30" rows="10" className="border rounded-2xl w-full shadow-md border-gray h-20 p-4 md:h-36"></textarea>
 
-                    <button type="submit" className="w-full h-12 bg-blue text-white rounded-3xl text-xl md:h-14 md:text-xl ">Enviar</button>
+                    <button type="submit"   className="w-full h-12 bg-blue text-white rounded-3xl text-xl md:h-14 md:text-xl ">Enviar</button>
 
                     <p className="text-xs m-auto  text-gray md:text-base">Nunca compartas información confidencial (números de tarjetas de crédito, números de identificación personal, contraseñas) a través de este formulario.</p>
                     <p className="text-xs m-auto text-gray md:text-base">Este sitio está protegido por reCAPTCHA y se aplica la 

@@ -42,9 +42,9 @@ const Propiedades = () => {
                 <option value="alto">Precio: más Alto a más Baja</option>
             </select>
             <div className="flex items-center justify-center w-full gap-7 mt-3 text-2xl">
-                <CiBoxList  onClick={lista}/>
-                <CgMenuGridR  onClick={cuadricula}/>
-                <CiLocationOn onClick={cuadricula}/>
+                <CiBoxList  onClick={lista} className="cursor-pointer"/>
+                <CgMenuGridR  onClick={cuadricula} className="cursor-pointer"/>
+                <CiLocationOn onClick={cuadricula} className="cursor-pointer"/>
 
             </div>
         </nav>
