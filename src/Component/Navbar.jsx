@@ -23,12 +23,12 @@ const Navbar = () => {
 
         <ul className={active ? 'absolute m-auto left-0 top-24 flex gap-5 flex-col text-center bg-blueDark p-10 w-full duration-1000 transition-all ease-in-out -z-40 text-white ' : 'absolute m-auto left-0 -top-60 flex gap-5 flex-col text-center bg-blueDark p-10 w-full duration-1000 transition-all ease-in-out -z-40 text-white '  }>
                 
-                <Link><li className="hover:text-gray">Inicio</li></Link>
-                <Link><li className="hover:text-gray">Propiedades</li></Link>
-                <Link><li className="hover:text-gray">Nosotros</li></Link>
-                <Link><li className="hover:text-gray">Contacto</li></Link>
+                <Link to="/"><li className="hover:text-gray">Inicio</li></Link>
+                <Link to="/propiedades"><li className="hover:text-gray">Propiedades</li></Link>
+                <Link to="/nosotros"><li className="hover:text-gray">Nosotros</li></Link>
+                <Link to="/contacto"><li className="hover:text-gray">Contacto</li></Link>
 
-                <Link><button className="bg-green px-5 py-3 text-lg w-40 rounded-3xl hover:bg-[#32c895] duration-200">Ingresar</button></Link>
+                <Link to="/"><button className="bg-green px-5 py-3 text-lg w-40 rounded-3xl hover:bg-[#32c895] duration-200">Ingresar</button></Link>
             </ul>
         </div>
         <div className="hidden lg:flex w-full flex-col mt-2  items-center  ">
@@ -57,14 +57,14 @@ const Navbar = () => {
                 <nav className="flex justify-between items-center max-w-[1240px]  py-6 px-4 m-auto ">
                     <ul className= 'flex gap-9 text-xl pl-3  duration-1000 transition-all ease-in-out  text-white '>
                             
-                            <Link><li className="hover:text-gray">Inicio</li></Link>
-                            <Link><li className="hover:text-gray">Propiedades</li></Link>
-                            <Link><li className="hover:text-gray">Nosotros</li></Link>
-                            <Link><li className="hover:text-gray">Contacto</li></Link>
+                            <Link to="/"><li className="hover:text-gray">Inicio</li></Link>
+                            <Link to="/propiedades"><li className="hover:text-gray">Propiedades</li></Link>
+                            <Link to="nosotros"><li className="hover:text-gray">Nosotros</li></Link>
+                            <Link to="contacto"><li className="hover:text-gray">Contacto</li></Link>
 
                             
                         </ul>
-                        <Link><button className="bg-green px-5 py-3 text-lg w-40 rounded-3xl hover:bg-[#32c895] duration-200">Ingresar</button></Link>
+                        <Link to='/'><button className="bg-green px-5 py-3 text-lg w-40 rounded-3xl hover:bg-[#32c895] duration-200">Ingresar</button></Link>
                 </nav>
             </div>
         </div>

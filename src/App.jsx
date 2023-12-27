@@ -1,11 +1,11 @@
-import Buscador from "./Component/Buscador"
-import Calculadora from "./Component/Calculadora"
-import Carrousel from "./Component/Carrousel"
-import Comentarios from "./Component/Comentarios"
-import Destacada from "./Component/Destacada"
+import { Route, Routes } from "react-router-dom"
 import Footer from "./Component/Footer"
-import Header from "./Component/Header"
 import Navbar from "./Component/Navbar"
+import Principal from "./Component/Principal"
+import Propiedades from "./Component/Propiedades"
+import DetallePropiedad from "./Component/DetallePropiedad"
+import Nosotros from "./Component/Nosotros"
+import Contacto from "./Component/Contacto"
 
 
 function App() {
@@ -14,12 +14,13 @@ function App() {
   return (
     <>
         <Navbar/>
-        <Header/>
-        <Buscador/>
-        <Carrousel/>
-        <Calculadora/>
-        <Destacada/>
-        <Comentarios/>
+        <Routes>
+            <Route path="/" element={<Principal/>} />
+            <Route path="/propiedades" element={<Propiedades/>}/>
+            <Route path="/detallePropiedad" element={<DetallePropiedad/>}/>
+            <Route path="/nosotros" element={<Nosotros/>}/>
+            <Route path="/contacto" element={<Contacto/>}/>
+        </Routes>
         <Footer/>
       
     </>

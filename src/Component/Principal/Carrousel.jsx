@@ -1,13 +1,14 @@
 
 import { useEffect, useRef } from 'react'
-import data from '../assets/Casas.json'
+import data from '../../assets/Casas.json'
 import Casa from './Casa'
 import { GrNext, GrPrevious } from "react-icons/gr"
+
 
 const Carrousel = () => {
     const slideshow = useRef(null)
 
-    
+   
     const siguiente = () => {
         if (slideshow.current.children.length > 0) {
           const index = slideshow.current.children.length - 1;
@@ -57,8 +58,8 @@ const Carrousel = () => {
     
 
   return (
-  <div className='w-75% overflow-hidden m-auto max-w-[1240px] flex flex-col mb-12 relative'>
-          <div className='flex w-[355px] h-[450px] gap-8   px-2 py-3' ref={slideshow}>
+  <div className='w-[300px] md:w-[80%] lg:w-full overflow-hidden m-auto max-w-[1240px] flex flex-col mb-12 relative'>
+          <div className='flex w-[355px] h-[450px] gap-8   px-2 py-3 cursor-pointer' ref={slideshow}>
             
             {data.casas.map((casa) => {
         return (
@@ -71,14 +72,15 @@ const Carrousel = () => {
             habitaciones={casa.bedrooms}
             baños={casa.bathrooms}
             img={casa.imagenes.fachada}
-
+            id={casa.id}
             />
         );
         })}
         </div>
-        <div className='flex gap-4 m-auto absolute w-full justify-between h-full py-3 px-2 pb-4'>
+      
+        <div className='hidden sm:flex gap-4 m-auto absolute w-full justify-between h-full py-3 px-2 pb-4'>
             <button onClick={anterior} className='h-full bg-[rgba(2,2,2,0.2)] rounded-tl-lg rounded-bl-xl w-12 '><GrPrevious className='text-4xl '/></button>
-            <button onClick={siguiente} className='h-full bg-[rgba(2,2,2,0.2)]  rounded-tr-xl rounded-br-xl w-12 '><GrNext className='text-4xl text-black'/></button>
+            <button onClick={siguiente} className='h-full bg-[rgba(2,2,2,0.2)]  rounded-tr-xl rounded-br-xl w-12 -mr-2 '><GrNext className='text-4xl text-black'/></button>
         </div>
   </div>
   )

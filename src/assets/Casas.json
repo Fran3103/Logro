@@ -18,7 +18,7 @@
         "hall": 1,
         "kitchen": 1,
         "totalFloors": 1,
-        "price": "Gs.2,200,000/mes",
+        "price": "Gs.2,200,000",
         "yearBuilt": 2024,
         "plano": "https://github.com/Fran3103/Logro/blob/main/src/assets/casa-1/plano.jpg?raw=true?token=GHSAT0AAAAAACK22N2ZI3RNXGUTJFTWQDZ4ZL53XQQ",
         "imagenes": {
@@ -48,7 +48,7 @@
         "hall": 1,
         "kitchen": 1,
         "totalFloors": 1,
-        "price": "Gs.2,200,000/mes",
+        "price": "Gs.2,200,000",
         "yearBuilt": 2023,
         "plano": "https://github.com/Fran3103/Logro/blob/main/src/assets/casa-2/plano.jpg?raw=true?token=GHSAT0AAAAAACK22N2ZI3RNXGUTJFTWQDZ4ZL53XQQ",
         "imagenes": {
@@ -73,7 +73,7 @@
         "hall": 1,
         "kitchen": 1,
         "totalFloors": 1,
-        "price": "Gs.2,200,000/mes",
+        "price": "Gs.2,200,000",
         "yearBuilt": 2023,
         "plano": "https://github.com/Fran3103/Logro/blob/main/src/assets/casa-3/plano.jpg?raw=true?token=GHSAT0AAAAAACK22N2ZI3RNXGUTJFTWQDZ4ZL53XQQ",
         "imagenes": {
@@ -97,7 +97,7 @@
         "hall": 1,
         "kitchen": 1,
         "totalFloors": 1,
-        "price": "Gs.2,200,000/mes",
+        "price": "Gs.2,200,000",
         "yearBuilt": 2024,
         "plano": "https://raw.githubusercontent.com/Fran3103/Logro/main/src/assets/casa-4/plano.jpg?token=GHSAT0AAAAAACK22N2ZJCC7DPZJUN3WCPSKZL54XCQ",
         "imagenes": {
@@ -126,7 +126,7 @@
         "hall": 1,
         "kitchen": 1,
         "totalFloors": 1,
-        "price": "Gs.2,200,000/mes",
+        "price": "Gs.2,200,000",
         "yearBuilt": 2024,
         "plano": "https://github.com/Fran3103/Logro/blob/main/src/assets/casa-1/plano.jpg?raw=true?token=GHSAT0AAAAAACK22N2ZI3RNXGUTJFTWQDZ4ZL53XQQ",
         "imagenes": {
@@ -156,7 +156,7 @@
         "hall": 1,
         "kitchen": 1,
         "totalFloors": 1,
-        "price": "Gs.2,200,000/mes",
+        "price": "Gs.2,200,000",
         "yearBuilt": 2024,
         "plano": "https://github.com/Fran3103/Logro/blob/main/src/assets/casa-1/plano.jpg?raw=true?token=GHSAT0AAAAAACK22N2ZI3RNXGUTJFTWQDZ4ZL53XQQ",
         "imagenes": {
@@ -186,7 +186,7 @@
         "hall": 1,
         "kitchen": 1,
         "totalFloors": 1,
-        "price": "Gs.2,200,000/mes",
+        "price": "Gs.2,200,000",
         "yearBuilt": 2024,
         "plano":"https://github.com/Fran3103/Logro/blob/main/src/assets/casa-7/plano-82m.jpg?raw=true?token=GHSAT0AAAAAACK22N2ZI3RNXGUTJFTWQDZ4ZL53XQQ",
         "imagenes":{
@@ -204,7 +204,7 @@
         "valor": 2200000,
         "estado": "a construir",
         "urbanizacion": "San Cayetano, Itauguá, Paraguay",
-        "descripcion": "Aquí hacemos realidad el sueño de tener tu propio hogar, diseñado especialmente para aquellos que buscan construir la vida que siempre quisieron. En Logro, creemos que mereces y puedes tener una casa confortable, con la mejor financiación adaptada a tus posibilidades.\n\nTe ofrecemos viviendas de calidad en la hermosa ciudad de Itauguá, específicamente en la Urbanización San Cayetano.\n\nQueremos ser parte de tu LOGRO y acompañarte en esta emocionante aventura de encontrar tu hogar ideal.",
+        "descripcion": "Aquí hacemos realidad el sueño de tener tu propio hogar, diseñado especialmente para aquellos que buscan construir la vida que siempre quisieron. En Logro, creemos que mereces y puedes tener una casa confortable, con la mejor financiación adaptada a tus posibilidades.\n\n Te ofrecemos viviendas de calidad en la hermosa ciudad de Itauguá, específicamente en la Urbanización San Cayetano.\n\nQueremos ser parte de tu LOGRO y acompañarte en esta emocionante aventura de encontrar tu hogar ideal.",
         "propertyId": "ITA-MIN-60",
         "propertyType": "A construir",
         "area": "82 m2",
@@ -214,7 +214,7 @@
         "hall": 1,
         "kitchen": 1,
         "totalFloors": 1,
-        "price": "Gs.2,200,000/mes",
+        "price": "Gs.2,200,000",
         "yearBuilt": 2024,
         "plano":"https://raw.githubusercontent.com/Fran3103/Logro/main/src/assets/casa-7/plano-82m.jpg?token=GHSAT0AAAAAACK22N2ZBALLYUNZLA3NOTEOZL54UOA",
         "imagenes":{

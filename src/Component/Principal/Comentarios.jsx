@@ -1,5 +1,5 @@
 import { useRef} from 'react'
-import data from '../assets/Comentarios.json'
+import data from '../../assets/Comentarios.json'
 import { GrNext, GrPrevious } from "react-icons/gr"
 import { FaQuoteLeft, FaStar } from "react-icons/fa"
 

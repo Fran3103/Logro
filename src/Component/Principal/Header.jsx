@@ -11,17 +11,17 @@ const Header = () => {
             <div>
                 <form  className="flex flex-col justify-center bg-white py-4 px-10 rounded-xl text-left gap-4 max-w-[450px]">
 
-                    <label htmlFor="" className="-mb-3">Nombre y Apellido</label>
-                    <input type="text" name="nombre" id="" className="border rounded-2xl w-full shadow-md border-gray h-9"/>
+                    <label htmlFor="nombre" className="-mb-3">Nombre y Apellido</label>
+                    <input type="text" name="nombre" id="nombre" className="border rounded-2xl w-full shadow-md border-gray h-9 pl-4"/>
 
-                    <label htmlFor="" className="-mb-3">Telefono</label>
-                    <input type="tel" name="telefono" id="" className="border rounded-2xl w-full shadow-md border-gray h-9"/>
+                    <label htmlFor="telefono" className="-mb-3">Telefono</label>
+                    <input type="number" name="telefono" id="telefono" className="border rounded-2xl w-full shadow-md border-gray h-9 pl-4"/>
 
-                    <label htmlFor="" className="-mb-3">Correo electronico (opcional)</label>
-                    <input type="email" name="correo" id="" className="border rounded-2xl w-full shadow-md border-gray h-9"/>
+                    <label htmlFor="email" className="-mb-3">Correo electronico (opcional)</label>
+                    <input type="email" name="correo" id="email" className="border rounded-2xl w-full shadow-md border-gray h-9 pl-4"/>
 
-                    <label htmlFor="" className="-mb-3">Tu Mensaje (opcional)</label>
-                    <textarea name="mensaje" id="" cols="30" rows="10" className="border rounded-2xl w-full shadow-md border-gray h-20"></textarea>
+                    <label htmlFor="comentario" className="-mb-3">Tu Mensaje (opcional)</label>
+                    <textarea name="mensaje" id="comentario" cols="30" rows="10" className="border rounded-2xl w-full shadow-md border-gray h-20 p-4"></textarea>
 
                     <button type="submit" className="w-full h-12 bg-blue text-white rounded-3xl text-xl ">Enviar</button>
 
