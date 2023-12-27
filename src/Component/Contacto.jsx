@@ -2,6 +2,14 @@ import { FaPhone } from "react-icons/fa";
 import { MdEmail } from "react-icons/md"
 
 const Contacto = () => {
+
+    const submit = (e) => {
+        e.preventDefault();
+        
+        
+        e.target.reset()
+      };
+        
   return (
     <div className="flex flex-col max-w-[1240px] m-auto w-full  sm:items-start p-2  gap-6 mt-6   md:justify-center ">
         <h1 className="text-5xl text-blueDark font-bold md:text-5xl md:mt-5 ">Contacto</h1>
@@ -17,7 +25,7 @@ const Contacto = () => {
             </div>
         </div>
         <div className="m-auto w-full max-w-[800px]">
-            <form  className="flex flex-col justify-center bg-white py-4 px-10 rounded-xl text-left gap-4 md:text-2xl ">
+            <form onSubmit={submit} className="flex flex-col justify-center bg-white py-4 px-10 rounded-xl text-left gap-4 md:text-2xl ">
 
                 <label htmlFor="nombre" className="-mb-3">Nombre y Apellido</label>
                 <input type="text" name="nombre" id="nombre" className="border rounded-2xl w-full shadow-md border-gray h-9 pl-4 md:h-12"/>
