@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import img1 from '../assets/casa-2/fachada.jpg'
 import img2 from '../assets/casa-3/fachada.jpg'
 import img3 from '../assets/casa-4/fachada.jpg'
@@ -19,9 +20,15 @@ const Footer = () => {
         <div className='flex flex-col gap-6 my-4 w-full sm:my-0 sm:h-56 '>
             <h2  className='text-2xl font-bold lg:text-2xl '>Ultimas Obras</h2>
             <div className='flex w-full gap-1 items-center '>
-                <img src={img1} alt="imagen 1" className='w-[108px] h-[108px] sm:w-[65px] sm:h-[65px] lg:w-[90px] lg:h-[90px]'/>
-                <img src={img2} alt="imagen 2" className='w-[108px] h-[108px] sm:w-[65px] sm:h-[65px] lg:w-[90px] lg:h-[90px]'/>
-                <img src={img3} alt="imagen 3"className='w-[108px] h-[108px] sm:w-[65px] sm:h-[65px] lg:w-[90px] lg:h-[90px]'/>
+                <Link to={`/detallePropiedad?casaID=2`}  className='cursor-pointer'>
+                    <img src={img1} alt="imagen 1" className='w-[108px] h-[108px] sm:w-[65px] sm:h-[65px] lg:w-[90px] lg:h-[90px]'/>
+                </Link>
+                <Link to={`/detallePropiedad?casaID=3`} className='cursor-pointer' >
+                    <img src={img2} alt="imagen 2" className='w-[108px] h-[108px] sm:w-[65px] sm:h-[65px] lg:w-[90px] lg:h-[90px]'/>
+                </Link>
+                <Link to={`/detallePropiedad?casaID=4`}  className='cursor-pointer'>
+                    <img src={img3} alt="imagen 3"className='w-[108px] h-[108px] sm:w-[65px] sm:h-[65px] lg:w-[90px] lg:h-[90px]'/>
+                </Link>
             </div>
         </div>
         <div className='flex flex-col w-full items-start  gap-3 my-4 sm:h-56 '>
