@@ -11,17 +11,17 @@ import { Link } from 'react-router-dom'
 import Carrousel from './Principal/Carrousel'
 import { useState } from 'react'
 
+import { useParams } from "react-router-dom"
 
 const DetallePropiedad = () => {
 
 
-    let query = new URLSearchParams (window.location.search)
-    let idCasa = query.get('casaID')- 1
+    
     const [imagen, setImagen] = useState (0)
     const [plano, setPlano] = useState(false)
 
-   
-
+    const { casaID } = useParams();
+console.log(casaID)
   const submit = (e) => {
     e.preventDefault();
     
@@ -31,13 +31,13 @@ const DetallePropiedad = () => {
 
     let casa = casas.casas
     let imagenes = [
-        casa[idCasa].imagenes.acceso,    
-        casa[idCasa].imagenes.baño,    
-        casa[idCasa].imagenes.cocina,    
-        casa[idCasa].imagenes.comedor,    
-        casa[idCasa].imagenes.dormitorio,    
-        casa[idCasa].imagenes.estar,    
-        casa[idCasa].imagenes.fachada    
+        casa[casaID].imagenes.acceso,    
+        casa[casaID].imagenes.baño,    
+        casa[casaID].imagenes.cocina,    
+        casa[casaID].imagenes.comedor,    
+        casa[casaID].imagenes.dormitorio,    
+        casa[casaID].imagenes.estar,    
+        casa[casaID].imagenes.fachada    
     ]
 
     const imagenesDefinidas = imagenes.filter(imagen => imagen !== undefined);
@@ -53,25 +53,23 @@ const DetallePropiedad = () => {
         setPlano(!plano)
     }
 
-    
-    console.log('Valor de plano:', plano);
-
-    console.log(imagenesDefinidas)
+   
 
   return (
     <div className='max-w-[1240px] flex flex-col p-5 sm:p-12 mt-4 gap-2 m-auto '>
+        
         <div className='flex flex-col gap-6 sm:flex-col sm:w-full sm:items-start'>
 
             <div >
-                <h1 className='text-4xl font-bold text-black my-4 md:text-5xl'>{casa[idCasa].tipo} - <span>{casa[idCasa].area}</span></h1>
-                <h3 className='text-base text-gray md:text-xl'>Urbanizacion Logro {casa[idCasa].urbanizacion}</h3>
+                <h1 className='text-4xl font-bold text-black my-4 md:text-5xl'>{casa[casaID].tipo} - <span>{casa[casaID].area}</span></h1>
+                <h3 className='text-base text-gray md:text-xl'>Urbanizacion Logro {casa[casaID].urbanizacion}</h3>
             </div>
             <div className='sm:flex sm:justify-between sm:w-full md:mb-12 '>
                 <div>
-                    <h3 className='text-4xl font-bold text-blue sm:text-2xl md:text-5xl mb-2' >{casa[idCasa].price} <span className='text-base text-gray font-light'>/mes</span></h3>
-                    <p className='text-base text-gray'>{casa[idCasa].tipo}</p>
+                    <h3 className='text-4xl font-bold text-blue sm:text-2xl md:text-5xl mb-2' >{casa[casaID].price} <span className='text-base text-gray font-light'>/mes</span></h3>
+                    <p className='text-base text-gray'>{casa[casaID].tipo}</p>
                 </div>
-                <strong className=" flex w-[130px] items-center gap-2 text-center  px-6 rounded-full bg-white  text-black font-light border my-5 "> {casa[idCasa].estado}</strong>
+                <strong className=" flex w-[130px] items-center gap-2 text-center  px-6 rounded-full bg-white  text-black font-light border my-5 "> {casa[casaID].estado}</strong>
             </div>
 
         </div>
@@ -81,7 +79,7 @@ const DetallePropiedad = () => {
             {imagenesDefinidas.length > 0 && (
                 <img
                     src={imagenesDefinidas[imagen]}
-                    alt={casa[idCasa]?.tipo || ''}
+                    alt={casa[casaID]?.tipo || ''}
                     className='rounded-t-xl transition-all duration-300 w-full h-full'
                 />
                 )}
@@ -94,19 +92,19 @@ const DetallePropiedad = () => {
                     <div className='w-full flex flex-col gap-2 items-center justify-center p-3 text-center text-white sm:flex-row sm:gap-12 sm:justify-around'>
                         <div >
                             <p className='text-xs md:text-lg'>Dormitorios</p>
-                            <p className='flex items-center justify-center gap-2' ><IoMdPeople />{casa[idCasa].bedrooms}</p>
+                            <p className='flex items-center justify-center gap-2' ><IoMdPeople />{casa[casaID].bedrooms}</p>
                         </div>
                         <div>
                             <p className='text-xs md:text-lg'>Baños</p>
-                            <p className='flex items-center justify-center gap-2'><FaShower />{casa[idCasa].bathrooms}</p>
+                            <p className='flex items-center justify-center gap-2'><FaShower />{casa[casaID].bathrooms}</p>
                         </div>
                         <div>
                             <p className='text-xs md:text-lg'>Año de construccion</p>
-                            <p className='flex items-center justify-center gap-2'><MdOutlineCalendarMonth />{casa[idCasa].yearBuilt}</p>
+                            <p className='flex items-center justify-center gap-2'><MdOutlineCalendarMonth />{casa[casaID].yearBuilt}</p>
                         </div>
                         <div>
                             <p className='text-xs md:text-lg'>Area</p>
-                            <p className='flex items-center justify-center gap-2'><RxRulerSquare />{casa[idCasa].area}</p>
+                            <p className='flex items-center justify-center gap-2'><RxRulerSquare />{casa[casaID].area}</p>
                         </div>
                     </div>
             </div>
@@ -123,17 +121,17 @@ const DetallePropiedad = () => {
             <hr className='w-[50px] h-[3px] border-none bg-blue'/>
             <div className='flex flex-col gap-3 my-4'>
                 <ul className='flex flex-col gap-3 md:grid md:grid-cols-2 md:h-500px'>
-                    <li className='flex  gap-3 md:text-xl md:gap-5'>Id Propiedad: <p className='text-black font-bold'>{casa[idCasa].propertyId}</p></li>
-                    <li className='flex  gap-3 md:text-xl md:gap-5'>Tipo de Propiedad: <p className='text-black font-bold'>{casa[idCasa].tipo}</p></li>
-                    <li className='flex  gap-3 md:text-xl md:gap-5'>Area: <p className='text-black font-bold'>{casa[idCasa].area}</p></li>
-                    <li className='flex  gap-3 md:text-xl md:gap-5'>Tamaño del Terreno: <p className='text-black font-bold'>{casa[idCasa].lotSize}</p></li>
-                    <li className='flex  gap-3 md:text-xl md:gap-5'>Dormitorios: <p className='text-black font-bold'>{casa[idCasa].bedrooms}</p></li>
-                    <li className='flex  gap-3 md:text-xl md:gap-5'>Baños: <p className='text-black font-bold'>{casa[idCasa].bathrooms}</p></li>
-                    <li className='flex  gap-3 md:text-xl md:gap-5'>Hall: <p className='text-black font-bold'>{casa[idCasa].hall}</p></li>
-                    <li className='flex  gap-3 md:text-xl md:gap-5'>Cocina: <p className='text-black font-bold'>{casa[idCasa].kitchen}</p></li>
-                    <li className='flex  gap-3 md:text-xl md:gap-5'>Pisos Totales: <p className='text-black font-bold'>{casa[idCasa].totalFloors}</p></li>
-                    <li className='flex  gap-3 md:text-xl md:gap-5'>Precio: <p className='text-black font-bold'>{casa[idCasa].price}</p></li>
-                    <li className='flex  gap-3 md:text-xl md:gap-5'>Año de Construcion: <p className='text-black font-bold'>{casa[idCasa].yearBuilt}</p></li>
+                    <li className='flex  gap-3 md:text-xl md:gap-5'>Id Propiedad: <p className='text-black font-bold'>{casa[casaID].propertyId}</p></li>
+                    <li className='flex  gap-3 md:text-xl md:gap-5'>Tipo de Propiedad: <p className='text-black font-bold'>{casa[casaID].tipo}</p></li>
+                    <li className='flex  gap-3 md:text-xl md:gap-5'>Area: <p className='text-black font-bold'>{casa[casaID].area}</p></li>
+                    <li className='flex  gap-3 md:text-xl md:gap-5'>Tamaño del Terreno: <p className='text-black font-bold'>{casa[casaID].lotSize}</p></li>
+                    <li className='flex  gap-3 md:text-xl md:gap-5'>Dormitorios: <p className='text-black font-bold'>{casa[casaID].bedrooms}</p></li>
+                    <li className='flex  gap-3 md:text-xl md:gap-5'>Baños: <p className='text-black font-bold'>{casa[casaID].bathrooms}</p></li>
+                    <li className='flex  gap-3 md:text-xl md:gap-5'>Hall: <p className='text-black font-bold'>{casa[casaID].hall}</p></li>
+                    <li className='flex  gap-3 md:text-xl md:gap-5'>Cocina: <p className='text-black font-bold'>{casa[casaID].kitchen}</p></li>
+                    <li className='flex  gap-3 md:text-xl md:gap-5'>Pisos Totales: <p className='text-black font-bold'>{casa[casaID].totalFloors}</p></li>
+                    <li className='flex  gap-3 md:text-xl md:gap-5'>Precio: <p className='text-black font-bold'>{casa[casaID].price}</p></li>
+                    <li className='flex  gap-3 md:text-xl md:gap-5'>Año de Construcion: <p className='text-black font-bold'>{casa[casaID].yearBuilt}</p></li>
                     
                 </ul>
 
@@ -142,7 +140,7 @@ const DetallePropiedad = () => {
         <div  className='flex flex-col my-4 gap-5'>
             <h2 className='text-2xl text-blueDark font-bold '>Servicion y Caracteristicas</h2>
             <hr className='w-[50px] h-[3px] border-none bg-blue'/>
-            <p className='md:text-2xl'>{'>  '}{casa[idCasa].area}</p>
+            <p className='md:text-2xl'>{'>  '}{casa[casaID].area}</p>
         </div>
         <div  className='flex flex-col my-4 gap-5 h-full'>
             <h2 className='text-2xl text-blueDark font-bold '>Planos de Planta</h2>
@@ -156,18 +154,18 @@ const DetallePropiedad = () => {
 
                     </div>
                     <div className='flex gap-3 items-center sm:text-xl justify-between w-full mt-3 sm:mt-0  ' >
-                        <p className='flex  sm:flex-row items-center text-xs md:text-2xl'>{casa[idCasa].area}</p>
-                        <p className='flex  sm:flex-row items-center text-xs md:text-2xl'>{casa[idCasa].bedrooms} Dormitorio</p>
-                        <p className='flex  sm:flex-row items-center text-xs md:text-2xl '>{casa[idCasa].bathrooms} Baño</p>
-                        <p className='flex  sm:flex-row items-center text-xs md:text-2xl'>{casa[idCasa].bathrooms} Baño</p>
-                        <p className='flex sm:flex-row items-center text-xs md:text-2xl md:mr-4'>{casa[idCasa].kitchen} Cocina</p>
+                        <p className='flex  sm:flex-row items-center text-xs md:text-2xl'>{casa[casaID].area}</p>
+                        <p className='flex  sm:flex-row items-center text-xs md:text-2xl'>{casa[casaID].bedrooms} Dormitorio</p>
+                        <p className='flex  sm:flex-row items-center text-xs md:text-2xl '>{casa[casaID].bathrooms} Baño</p>
+                        <p className='flex  sm:flex-row items-center text-xs md:text-2xl'>{casa[casaID].bathrooms} Baño</p>
+                        <p className='flex sm:flex-row items-center text-xs md:text-2xl md:mr-4'>{casa[casaID].kitchen} Cocina</p>
                     
                     </div>
                 </div>
                 <div className={ `${plano ? 'h-[200px] transition-all duration-500 overflow-hidden sm:h-[400px] ': 'hidden' } `}>
                         <img
-                            src={casa[idCasa].plano}
-                            alt={casa[idCasa].propertyId}
+                            src={casa[casaID].plano}
+                            alt={casa[casaID].propertyId}
                             className='w-full h-full'
                         />
                     </div>
@@ -232,7 +230,7 @@ const DetallePropiedad = () => {
         <hr className='w-[50px] h-[3px] border-none bg-blue'/>
 
         <div className='md:flex w-full max-w-[1240px] justify-around'>
-            <Link to={`/detallePropiedad?casaID=${casa[2].id}`} > 
+            <Link to={`/detallePropiedad/1`} > 
                 <div className= "w-[345px]  m-auto"   >
                             <div className= "relative w-full max-w-[400px]"  >
                             
@@ -258,7 +256,7 @@ const DetallePropiedad = () => {
                             
                         </div>
                 </Link>
-                <Link to={`/detallePropiedad?casaID=${casa[1].id}`} > 
+                <Link to={`/detallePropiedad/2`} > 
                 <div className= "w-[345px]  m-auto"   >
                             <div className= "relative w-full max-w-[400px]"  >
                             
@@ -286,6 +284,7 @@ const DetallePropiedad = () => {
                 </Link>
             </div>
         </div>
+        
     </div>
   )
 }

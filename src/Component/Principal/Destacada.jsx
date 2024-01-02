@@ -8,6 +8,8 @@ import { IoStar } from "react-icons/io5"
 import { CiLocationOn } from "react-icons/ci"
 import { MdPeople } from "react-icons/md"
 import { FaShower, FaChartArea } from "react-icons/fa"
+import ScrollToTop from "../../ScrollToTop"
+
 
 const Destacada = () => {
 
@@ -70,10 +72,12 @@ const Destacada = () => {
             </div>
 
             <h2 className="text-4xl text-blue mt-3 font-bold">Gs. 2,800,000 <span className="text-xl text-black">/mes</span></h2>
-           <Link to={`/detallePropiedad?casaID=2`} >
+           <Link to={`/detallePropiedad/2`} >
+                    <ScrollToTop/>
                     <button className="bg-[#029958] px-5 py-3 text-lg w-40 rounded-3xl hover:bg-[#32c895] duration-200 mt-4 text-white"> Ver Detalles</button>
            </Link>
         </div>
+   
     </div>
   )
 }

@@ -14,6 +14,7 @@ const Principal = () => {
         <Carrousel/>
         <Destacada/>
         <Comentarios/>
+       
 
     </div>
   )

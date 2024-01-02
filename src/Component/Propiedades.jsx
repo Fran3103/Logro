@@ -11,6 +11,8 @@ import { MdOutlineCalendarMonth } from "react-icons/md"
 import casas from '../assets/Casas.json'
 import { useState } from "react";
 import { Link } from "react-router-dom";
+import ScrollToTop from "../ScrollToTop";
+
 
 const Propiedades = () => {
 
@@ -26,10 +28,10 @@ const Propiedades = () => {
         setLista(false) 
         setCuadricula(true)
         }
-   
-
+  
   return (
     <div className="flex flex-col mt-6 items-center justify-center gap-8 max-w-[1240px] m-auto ">
+        <ScrollToTop/>
         <h1 className="text-3xl font-bold  my-5 md:text-5xl text-blueDark md:text-left">
             Lista de Propiedades
         </h1>
@@ -51,7 +53,7 @@ const Propiedades = () => {
         <div className={ CuadriculaActiva ? "max-w-[1240px] mt-12 flex flex-col gap-4 items-center justify-center sm:flex-wrap sm:flex-row" : listaActiva ? "max-w-[1240px] mt-12 flex flex-col  gap-12 w-full" : " flex " }>
             {casas.casas.map((casa) => {
                 return (
-                <Link to={`/detallePropiedad?casaID=${casa.id}`} key={casa.id}> <div className={ CuadriculaActiva ? "w-[345px]  " : listaActiva ? " shadow-2xl rounded-lg   w-[345px]   sm:flex   sm:w-[90%] md:w-[90%] max-w-[1200px] m-auto justify-between" : " flex " }  >
+                <Link to={`/detallePropiedad/${casa.id}`} key={casa.id}> <div className={ CuadriculaActiva ? "w-[345px]  " : listaActiva ? " shadow-2xl rounded-lg   w-[345px]   sm:flex   sm:w-[90%] md:w-[90%] max-w-[1200px] m-auto justify-between" : " flex " }  >
                         <div className={ CuadriculaActiva ? "relative w-full max-w-[400px]" : listaActiva ? "relative w-full max-w-[400px]" : " flex " }>
                         
                             <img src={casa.imagenes.fachada} alt={casa.tipo} className={ CuadriculaActiva ? "rounded-t-xl h-[250px] w-full " : listaActiva ? "rounded-tl-xl rounded-tr-xl sm:rounded-tr-none sm:rounded-bl-xl h-[250px] sm:h-[340px] w-full  " : " flex " }/>

@@ -2,6 +2,7 @@ import { Link } from 'react-router-dom';
 import img1 from '../assets/casa-2/fachada.jpg'
 import img2 from '../assets/casa-3/fachada.jpg'
 import img3 from '../assets/casa-4/fachada.jpg'
+
 const Footer = () => {
 
     const submit = (e) => {
@@ -10,9 +11,13 @@ const Footer = () => {
         
         e.target.reset()
       };
+      const scrollToTop = () => {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      };
         
       return (
         <section className='container pt-20 sm:max-w-[1240px] max-w-[550px] sm:w-full flex flex-col justify-center items-center p-4 m-auto sm:flex-row sm:grid sm:grid-cols-3 sm:grid-rows-2 sm:gap-3 lg:mt-4'>
+            
           <article className='info-section flex flex-col gap-5 my-4 sm:mr-6 sm:h-56 '>
             <h1 className='text-2xl font-bold lg:text-2xl'>Sobre LOGRO</h1>
             <p className='text-md text-gray font-semibold lg:text-lg lg:mr-12'>Construimos sueños, proporcionando hogares accesibles y de calidad para aquellos que buscan alcanzar su primer gran LOGRO: La Casa Propia</p>
@@ -20,13 +25,14 @@ const Footer = () => {
           <article className='projects-section flex flex-col gap-6 my-4 w-full sm:my-0 sm:h-56 '>
             <h2 className='text-2xl font-bold lg:text-2xl '>Últimas Obras</h2>
             <div className='flex w-full gap-1 items-center '>
-              <Link to={`/detallePropiedad?casaID=2`} className='cursor-pointer'>
+              
+              <Link to={"/detallePropiedad/2"} className='cursor-pointer' onClick={scrollToTop}>
                 <img src={img1} alt="imagen 1" className='w-[108px] h-[108px] sm:w-[65px] sm:h-[65px] lg:w-[90px] lg:h-[90px]'/>
               </Link>
-              <Link to={`/detallePropiedad?casaID=3`} className='cursor-pointer' >
+              <Link to={"/detallePropiedad/3"} className='cursor-pointer' onClick={scrollToTop} >
                 <img src={img2} alt="imagen 2" className='w-[108px] h-[108px] sm:w-[65px] sm:h-[65px] lg:w-[90px] lg:h-[90px]'/>
               </Link>
-              <Link to={`/detallePropiedad?casaID=4`} className='cursor-pointer'>
+              <Link to={"/detallePropiedad/4"} className='cursor-pointer' onClick={scrollToTop}>
                 <img src={img3} alt="imagen 3" className='w-[108px] h-[108px] sm:w-[65px] sm:h-[65px] lg:w-[90px] lg:h-[90px]'/>
               </Link>
             </div>
