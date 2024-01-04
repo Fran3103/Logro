@@ -7,6 +7,7 @@ import DetallePropiedad from "./Component/DetallePropiedad"
 import Nosotros from "./Component/Nosotros"
 import Contacto from "./Component/Contacto"
 import ScrollToTop from "./ScrollToTop"
+import Resultados from "./Component/Resultados"
 
 
 function App() {
@@ -22,6 +23,7 @@ function App() {
             <Route path="/detallePropiedad/:casaID" element={<DetallePropiedad/>}/>
             <Route path="/nosotros" element={<Nosotros/>}/>
             <Route path="/contacto" element={<Contacto/>}/>
+            <Route path="/resultados/:filtro" element={<Resultados/>}/>
         </Routes>
         <Footer/>
       

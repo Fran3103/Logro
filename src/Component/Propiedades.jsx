@@ -14,11 +14,12 @@ import { Link } from "react-router-dom";
 import ScrollToTop from "../ScrollToTop";
 
 
+
 const Propiedades = () => {
 
     const [listaActiva , setLista] = useState(true)
     const [CuadriculaActiva , setCuadricula] = useState(false)
- 
+    const [orden, setOrden ] = useState("bajo")
 
     const lista = () => {
         setCuadricula(false)
@@ -28,6 +29,10 @@ const Propiedades = () => {
         setLista(false) 
         setCuadricula(true)
         }
+
+    const handleOrdenChange = (event) => {
+         setOrden(event.target.value);
+    };
   
   return (
     <div className="flex flex-col mt-6 items-center justify-center gap-8 max-w-[1240px] m-auto ">
@@ -37,9 +42,9 @@ const Propiedades = () => {
         </h1>
         <nav className="flex flex-col items-center justify-center gap-9 text-xl md:flex-row  md:max-w-[1240px] w-full md:ml-32 md:mt-7">
             <p className="md:text-lg md:w-full">Mostrando 8 propiedades</p>
-            <select name="filtro" id="" className="border rounded-md p-2" >
+            <select name="filtro" id="" className="border rounded-md p-2" onChange={handleOrdenChange}>
                 <option   value="order por">Ordenar por</option>
-                <option value="Descatada">Destacada</option>
+                <option value="Destacada">Destacada</option>
                 <option value="bajo">Precio: más Bajo a más Alto</option>
                 <option value="alto">Precio: más Alto a más Baja</option>
             </select>
@@ -51,7 +56,21 @@ const Propiedades = () => {
             </div>
         </nav>
         <div className={ CuadriculaActiva ? "max-w-[1240px] mt-12 flex flex-col gap-4 items-center justify-center sm:flex-wrap sm:flex-row" : listaActiva ? "max-w-[1240px] mt-12 flex flex-col  gap-12 w-full" : " flex " }>
-            {casas.casas.map((casa) => {
+           
+         {casas.casas
+          .sort((a, b) => {
+            // Lógica para ordenar las propiedades según el estado actual de 'orden'
+            if (orden === "Destacada") {
+              return a.destacada - b.destacada;
+            } else if (orden === "alto") {
+              return b.valor - a.valor;
+            } else if (orden === "bajo") {
+                return a.valor - b.valor;}
+            else {
+              // Otros casos de orden, si es necesario
+              return 0;
+            }
+          }).map((casa) => {
                 return (
                 <Link to={`/detallePropiedad/${casa.id}`} key={casa.id}> <div className={ CuadriculaActiva ? "w-[345px]  " : listaActiva ? " shadow-2xl rounded-lg   w-[345px]   sm:flex   sm:w-[90%] md:w-[90%] max-w-[1200px] m-auto justify-between" : " flex " }  >
                         <div className={ CuadriculaActiva ? "relative w-full max-w-[400px]" : listaActiva ? "relative w-full max-w-[400px]" : " flex " }>
